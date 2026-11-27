@@ -142,6 +142,51 @@ Choose between 6 and 10 continents, at Standard, Vast (2.25× area), or Colossal
 
 The world has 26 biomes: Deep Ocean, Open Sea, Coral Shoals, Beach, Meadowland, Oakwood, Birchwood, Old Darkwood, Jungle, Bamboo Thicket, Mangrove, Swamp, Savanna, Steppe, Desert, Red Badlands, Salt Flats, Tundra, Taiga, Glacier, Mountains, Heather Highlands, Ashlands, Fungal Forest, Blossom Vale, and Crystal Barrens.
 
+## Your character
+
+Seven **attributes** (Strength, Agility, Endurance, Perception, Intellect, Will, Presence) on a 1 to 20 scale sit under **32 skills** in combat, magic, stealth, survival, craft, travel, and social groups. Skills improve by doing: swinging an axe trains Axes, haggling trains Trade, swimming trains Swimming. Each skill has a **potential** bar that drains as you practise and refills when you sleep or level up, so you can't grind one skill all night. Your class sets your starting attributes and **major skills**, and your background adds more.
+
+At creation you pick **traits** on a 3-point budget: advantages such as Quick learner, Silver tongue, or Bane of the dead, paid for with disadvantages such as Frail, Sun-sick, or Wanted. Trainers teach skill lessons for coin.
+
+The body matters too. **Stamina** drains when you fight, sprint, and swim, and you hit harder rested. Deep wounds **bleed** until bound. Heavy blows can **break an arm or leg**, which a healer or a Medicine check can set, and **pain** dulls your aim and wits.
+
+<p align="center"><img src="docs/media/living_systems.png" width="820" alt="The character sheet and an arrest by a town guard"></p>
+
+## A society that remembers
+
+- **People are records,** not spawns. Every townsperson has a birth year, values (honor, greed, piety, courage, kindness), a spouse, and children. They age, marry, have children, and die, and when a smith dies someone new takes up the trade.
+- **Reputation is by group** (common folk, merchants, nobility, clergy, the underworld, and scholars) and spreads **by word of mouth.** A deed reaches the next town only when news could have travelled there, and takes days to cross the sea. Kill someone and their kin hold a grudge.
+- **Rumors** travel at the speed of news, distort as they go, and are sometimes plain wrong.
+- **Live history:** what you and others do becomes the world's history, which you can read in its legends.
+
+## Trade, hunger, and winters
+
+Every settlement keeps **stockpiles** of food, timber, ore, cloth, tools, medicine, and luxuries. Prices follow scarcity, and caravans really carry cargo between towns. A poor **harvest** means a hungry winter: prices soar, people starve, and **refugees** take to the roads looking for somewhere to settle. You can donate food, give alms, or profit from it.
+
+Settlements **grow, shrink, and fall to ruin.** A town that empties becomes a ruin that bandits move into, and can be resettled later. Thriving towns **found new villages,** with roads to them.
+
+## Rulers, law, and faith
+
+- **Rulers** have goals (conquest, defense, wealth, faith, or paranoia) that shape what their nation does. They age, and when one dies an heir is crowned, or rival claimants start a **succession crisis** that you can tip by backing one of them.
+- **Crime** is witnessed. Witnesses report you, your **bounty** rises in that nation, and guards come to arrest you. You can stand **trial** (argue your innocence, or bribe the magistrate), pay the fine, slip a bribe, or resist. Sentences mean jail time, fines, or banishment.
+- **Six gods** with their own likes, taboos, and **holy days:** Ysolde of the Hearth (home and harvest), Kaurn the Stormfather (sea and courage), Morrow the Pale Ferryman (death), Thessa of the Green (beasts and forests), Vel the Lantern (knowledge and truth), and Ashgar the Unchained (freedom and rebellion). Pledge to one at an altar and build **piety** by doing what they love. Pious followers can call on miracles; breaking a taboo costs you.
+
+## Guilds, rivals, and property
+
+- **Five guilds** with ranks, perks, and timed quests: the Ironhand Lodge (fighters), the Circle of the Lantern (mages), the Quiet Hand (thieves), the Saltroad League (merchants), and the Order of the Dawnward (undead hunters). Rank needs both reputation and skill.
+- **Rival adventurers** roam the world, clear dungeons, grow stronger, and may beat you to a sub-king's shard. Meet them on the road to trade stories, travel together, or buy a shard off them. The **Hall of Fame** ranks everyone.
+- **Own a shop or a ranch.** Buy a deed from a town elder, stock the shelves or raise sheep and hens, and hire a clerk or hand to run it while you're away.
+
+## Travel and wildlife
+
+**Fast travel** asks how you want to go: cautious, normal, or reckless, sleeping at inns or camping. The journey runs into the bands that are really on the roads, which you can fight or sneak past.
+
+Wildlife lives too. Animals keep **dens,** breed in spring, starve in hard winters, and thin out where you overhunt. Bears and others **hibernate** (and wake up angry if disturbed), and herds **migrate** between summer and winter ranges.
+
+## Mods
+
+The game supports **JSON mods** for new creatures, items, spells, starting kits, recipes, wildlife, rumors, and simple events. Install them from **Menu → Mods.** See [docs/MODDING.md](docs/MODDING.md) and the example [Marsh Folk](docs/mods/marsh-folk.json) mod.
+
 ## Seasons, days, and moons
 
 <p align="center"><img src="docs/media/seasons.png" width="900" alt="The same village in spring, summer, autumn, and winter"></p>

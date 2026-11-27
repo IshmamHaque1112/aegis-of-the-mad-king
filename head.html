@@ -40,10 +40,10 @@ h1,h2,h3{font-family:"Pirata One",serif;font-weight:400;letter-spacing:.02em;mar
 .chips{display:flex;gap:8px;flex-wrap:wrap}
 .chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 14px;min-height:40px;font-size:15px}.chip.on{background:var(--gold);color:#1b1206;border-color:var(--gold2);font-weight:700}
 .bgdesc{color:var(--ink2);margin:8px 2px 0;font-size:15px}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
 #wopts{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .fld{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--ink2)}
-.fld select,.fld input,.fxrow select{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:9px 10px;font:inherit;min-height:42px}
+.fld select,.fld input,.fxrow select{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:9px 10px;font:inherit;min-height:42px;min-width:0;width:100%;box-sizing:border-box}
 .cbar{position:sticky;bottom:-16px;display:flex;justify-content:space-between;gap:10px;padding:14px 0;margin-top:20px;background:linear-gradient(transparent,var(--bg) 30%)}
 #loading{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;background:var(--bg);font:20px "Pixelify Sans";color:var(--gold2)}
 .spin{width:44px;height:44px;border:3px solid var(--line);border-top-color:var(--gold);border-radius:50%;animation:sp 1s linear infinite}@keyframes sp{to{transform:rotate(1turn)}}

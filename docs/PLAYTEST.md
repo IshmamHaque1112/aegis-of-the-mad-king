@@ -66,6 +66,18 @@ At the strategic level, rulers sent relief, retook towns, and sent hunters. I al
 | Animal pack leaders shouted orders in words. | They now howl, yelp, and snarl instead. |
 | Ambushers froze in place once a target was 3–4 tiles away. | They now creep in and pounce. |
 
+## Round 4: the living-world systems
+
+Twenty new systems went in (stats and skills, economy, harvests, people as records, families, word-of-mouth reputation, live history, rumors, wildlife, rival adventurers, guilds, courts, faith, property, travel, rulers, settlement change, migration and hibernation, injuries, and mods). Automated checks cover each one, plus save and load, fuzzed play across four seeds, a long soak, and screenshots on desktop and phone.
+
+- **Yearly ageing skipped anyone you had met.** Fixed so that only deaths and growing up wait while a person is on screen.
+- **Rival adventurers all died within twelve days** and the survivors levelled far too fast. They now pick dungeons near their level, survive failures more often, earn less experience, need twenty days and level 8 before trying for a shard, and new ones arrive when fewer than three are alive.
+- **No village was ever founded.** The search now tries harder and uses sensible spacing; new roads keep their full path, not just their two ends.
+- **Health and mana showed decimals** (36.3/36.3) after the Endurance bonus. Now rounded.
+- **Stamina could read above its maximum** after an injury lowered the cap. Now clamped.
+- **The world seed box overflowed** on narrow phones. Fixed.
+- **Prices look flat when towns are well stocked,** and births are rare. Both are by design for now, but worth tuning.
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.

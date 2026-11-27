@@ -1,0 +1,27 @@
+{
+  "id": "marsh-folk",
+  "name": "Marsh Folk",
+  "version": "1",
+  "species": {
+    "bogling": ["Bogling", "hum", "#5f7a4a", "#a3b27a", 9, 2, 0, 100, "wild", "humanoid opportunist", 4, "mushroom:2"]
+  },
+  "items": {
+    "reedcake": { "n": "Reed cake", "k": "food", "hun": 18, "v": 4, "stack": 1 }
+  },
+  "spells": {
+    "mire": { "n": "Mire", "mp": 4, "int": 3, "rng": 5, "d": "Turns the ground under a target to sucking mud." }
+  },
+  "recipes": [
+    { "out": "reedcake", "q": 2, "need": { "wheat": 1, "mushroom": 1 }, "g": "Camp" }
+  ],
+  "wild": {
+    "swamp": [["bogling", 2]]
+  },
+  "rumors": {
+    "hunter": ["They say the boglings trade reed cakes for shiny buttons."]
+  },
+  "events": [
+    { "on": "day", "chance": 0.05, "message": "A chorus of frogs rises from somewhere far off.", "tone": "story" },
+    { "on": "talk", "species": "bogling", "option": "Ask about the marsh", "reply": "Mud is home. Mud is warm. Mud remembers." }
+  ]
+}
