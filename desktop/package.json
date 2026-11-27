@@ -1,0 +1,23 @@
+{
+  "name": "aegis-of-the-mad-king",
+  "productName": "Aegis of the Mad King",
+  "version": "2.0.0",
+  "description": "An open-world roguelike of many continents, warring nations, and one shield that must break.",
+  "main": "main.js",
+  "author": "Ishmam Haque",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepare-game": "node -e \"const fs=require('fs');fs.mkdirSync('app',{recursive:true});for(const f of ['index.html','icon.svg','manifest.webmanifest'])fs.copyFileSync('../'+f,'app/'+f);fs.mkdirSync('app/fonts',{recursive:true});for(const f of fs.readdirSync('../fonts'))fs.copyFileSync('../fonts/'+f,'app/fonts/'+f);fs.mkdirSync('app/icons',{recursive:true});for(const f of fs.readdirSync('../icons'))fs.copyFileSync('../icons/'+f,'app/icons/'+f)\"",
+    "start": "npm run prepare-game && electron .",
+    "dist": "npm run prepare-game && electron-builder --publish never"
+  },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "io.github.ishmamhaque.aegis",
+    "files": ["main.js", "app/**"],
+    "icon": "../assets/logo-1024.png",
+    "win": { "target": ["nsis", "portable"] },
+    "mac": { "target": ["dmg"], "category": "public.app-category.role-playing-games" },
+    "linux": { "target": ["AppImage", "deb"], "category": "Game" }
+  }
+}

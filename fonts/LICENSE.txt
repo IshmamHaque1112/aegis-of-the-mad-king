@@ -1,0 +1,1 @@
+Fonts: Pirata One, Alegreya Sans, Pixelify Sans — SIL Open Font License 1.1 (https://openfontlicense.org). Source: github.com/google/fonts.
