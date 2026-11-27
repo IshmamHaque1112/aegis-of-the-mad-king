@@ -76,6 +76,37 @@ How they work:
   - Frightened or hostile NPCs grab an unattended vehicle, including yours, and drive off in it.
   - You can steal theirs, or hand the reins to a companion.
 
+## Creatures that think
+
+<p align="center"><img src="docs/media/pack.png" width="720" alt="A dire wolf alpha howls and its pack fans out to surround the player"></p>
+
+Every creature has a fighting style that suits it:
+
+| Type | How it fights |
+|---|---|
+| **Packs** (wolves, hyenas, wargs, Horde hounds) | Follow an alpha, which howls to rally the pack. They spread out to surround you rather than queue up. A lone wolf stalks and waits. Kill the alpha and the pack may scatter. |
+| **Ambushers** (jaguars, snow leopards, crocodiles, pythons, spiders, dragon lizards) | Hide and creep toward you, pounce from cover, then slink off to hide again when hurt. Hungry ones stalk travelers. |
+| **Territorial beasts** (bears, boars, walruses, rhinos, giant crabs) | Warn you first: they roar, stamp, and show tusks. Back off and they let you go. Stay and they charge. |
+| **Herds** | Panic spreads through the herd. Big herds stampede and trample anyone who corners them. |
+| **Scavengers** (vultures, crows, gulls, rats) | Circle at a distance and wait for something to weaken or die. They flock to corpses. |
+| **Fliers** (harpies, hawks, wyverns, rocs) | Swoop in, strike, and pull away. |
+| **Brutes** | Giants, cyclopes, trolls, and yetis hurl boulders. Minotaurs charge in a straight line. |
+| **Sharks** | Circle a swimmer before biting, unless they smell blood. |
+| **The dead** | Never give up a chase. Zombies drift together into hordes, wraiths sense the living through walls, and ghouls eat the dead to heal. |
+| **Soldiers** | Shout for help, guard their casters, and finish off the most wounded enemy. |
+| **Musketeers, archers, and casters** | Back away to keep their range, and retreat behind allies to reload or recover mana. |
+| **Berserkers** | Fly into a blood rage when wounded. |
+| **Assassins** | Strike from the shadows, then vanish again. |
+| **Civilians** | Scream for the guard, who come running, and flee toward them. |
+
+### Leaders and commanders
+- **In battle:** pack alphas, band captains, and garrison leaders give orders. They pick a target for everyone to focus on, rally anyone who is breaking ("Hold the line!"), and sound the retreat when the fight is lost. If a leader falls, the next strongest takes over, though followers may break and run first.
+- **Nobles and rulers:** they raise the alarm and have their guards close around them as bodyguards. Sub-kings and Vorgath call every guard in the hall.
+- **Across the map:**
+  - **Sub-kings** send warbands to relieve besieged Horde forts, reinforce their own sieges, and put a price on your head once you've killed enough of their soldiers or carry shards. Their hunters track you across the continent.
+  - **Nation rulers** send armies to break sieges of their towns, march to retake captured ones, and post bounties on outlaws.
+  - **Vorgath** sends his elite Hunters after you once you hold half the shards.
+
 ## Battle magic
 
 Every army has casters with their own spellsets:

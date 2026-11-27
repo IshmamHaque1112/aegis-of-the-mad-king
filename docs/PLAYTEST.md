@@ -45,6 +45,27 @@ New known issues:
 - A parked land vehicle can be climbed over by people. That avoids blocked gates, but pedestrians and a parked cart can share a tile.
 - NPC boats can get stranded in small inlets.
 
+## Round 3: creature AI and a bug sweep
+I tested each creature type in isolation:
+- A pack howled and fanned out around the player.
+- A hungry jaguar stalked hidden, then pounced.
+- A bear warned, then charged when the player stayed.
+- A berserker raged, an assassin vanished after striking, and a musketeer backed off to firing range.
+- A herd scattered, and an outmatched warband sounded the retreat.
+
+At the strategic level, rulers sent relief, retook towns, and sent hunters. I also ran a 3,000-action soak test on a Vast world, and six-seed fuzz runs now capture console errors as well as crashes. Both were clean.
+
+| Found | Fix |
+|---|---|
+| Hit messages showed damage before armor, wards, mounts, and hulls reduced it. Some even appeared after "You die". | They now report the damage actually taken, in the right order. |
+| Repeated persuasion flooded the log with d20 lines. | Consecutive rolls now collapse into one line. |
+| Casting at an empty tile or a resisting target said nothing. | It now gives a response. |
+| Choosing "Stay on land" at deep water said nothing. | It now gives a response. |
+| Off-screen monster bands of the same kind fought each other ("A yeti routed a yeti"). | They no longer do. |
+| Land armies could pick island villages as targets they could never reach. | Islands are now excluded. |
+| Animal pack leaders shouted orders in words. | They now howl, yelp, and snarl instead. |
+| Ambushers froze in place once a target was 3–4 tiles away. | They now creep in and pounce. |
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.
