@@ -111,6 +111,19 @@ Twenty more systems, each with its own automated check, plus all earlier suites,
 - **Prison sentences ignored which nation sentenced you,** so escapes added no bounty. Fixed.
 - **Small fixes:** sellsword companies always include one on your starting continent, and hiring one no longer needs the target already on your map. The caravan screen now explains why it's empty when you know no other markets. The pits no longer say "against A caged boar".
 
+## Round 8: the rest of the idea list, a new look, and a debugging sweep
+
+Every remaining idea from the design doc was built in eight batches (ecology, work, society, war, lore and magic, survival, life and travel, engine), each with its own automated check. After that came the visual overhaul and a debugging sweep: the autoplay bot on 13 seeds across all four world sizes, the fuzzer on 7 seeds, long soaks, save/load round trips of every new system, and phone screenshots of every new screen.
+
+- **One duplicated name stopped the whole game loading.** Two modules declared the same wrapper variable, a syntax error that left a black screen. `build.sh` now syntax-checks the bundle and refuses to write `index.html` if it fails. The same sweep caught two new helpers that silently replaced older ones with the same name (one broke world generation).
+- **Starting a second world reused the first world's towns.** Town layouts and terrain chunks were cached and never cleared, so *Play again* after a death, or loading a different save, built towns from the old world's plans. Both caches now reset on every new game and load.
+- **Owned houses could vanish** when a bigger town overlapped your village. The game looked up the nearest site instead of your own. Fixed.
+- **A new option list crashed loading** because it was added before the screen that defines it existed. It now loads after the UI.
+- **The journal map and history time-lapse revealed unexplored land** and every settlement. Both now respect fog of war until the game ends, and the region stats layer only covers places you know.
+- **The escape scenario was a death sentence:** it could drop an unarmed player on a glacier among ice bears. You now start in the mildest spot near the camp, with a club, bread and a head start.
+- **Diet was far too harsh** in the first draft (scurvy within a week). It now takes two weeks without fruit, and you get a warning first.
+- **Small fixes:** every cave was named "Cave"; number keys could pick a hidden option; the god view drew nothing; fishing weirs, rafting and tidepools now have proper tests. Earlier batches fixed region keys parsed as text, "old yeti" in lower case, barter that spent your best items first, toll and caravan messages that fired too often, "fine plain wool", and a pilgrimage that read a kill count that didn't exist.
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.
@@ -121,3 +134,5 @@ Twenty more systems, each with its own automated check, plus all earlier suites,
 - **Repeated persuasion spams d20 lines** in the log.
 - **The desktop (Electron) and Android (Capacitor) builds are untested.** They are configured, with CI workflows, but couldn't be built in the sandbox used to make this release.
 - **The audio is procedural and untested on iOS Safari,** which needs a tap before sound can start. The game waits for your first tap.
+- **Titanic worlds take about six seconds to generate** (three on Vast) and about three seconds to load, because loading regenerates the world from its seed.
+- **One old system test (founding a settlement) is flaky:** whether free land exists depends on the turn it runs, not on a bug.

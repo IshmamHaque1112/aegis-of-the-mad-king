@@ -285,6 +285,76 @@ Wildlife lives too. Animals keep **dens,** breed in spring, starve in hard winte
 - **A museum and collections:** found a museum and display trophies, relics and famous weapons for visitors' fees. Earn collector titles for species hunted, fish caught, landmarks found and exhibits shown.
 - **Saves that survive updates,** and a **Chronicle** of your run you can download as a page or copy as text.
 
+## Wild things
+
+- **Animals grow up and grow old:** young, adult and old animals, with quirks such as *skittish*, *scarred* or *greedy* that ranch-bred stock passes on. Legendary beasts have names.
+- **Signs in the wild:** kill sites, dung and territory marks show what lives nearby and how fresh the sign is. Predators hold territories, other animals keep clear, and birds and herds raise alarm calls when something big is coming.
+- **Nests in spring,** with eggs to gather, if the parents let you. Night hunters own the forest after dark.
+- **Herd sickness** (mange, hoof rot, frothing) spreads through ranches and wild herds. Isolate sick animals or lose the lot.
+- **Fish stocks** in each lake and river: overfish one and it empties for seasons. Overhunting a region tips it into collapse.
+- **Wild mounts must be broken,** three rides won before they accept you. Animal races with betting. Beast-speech, taught by hermits and shamans, calms animals. Blows can lame a leg or break a jaw instead of killing.
+
+## Work and trade
+
+- **Visible work:** farmers in the fields, smiths at the forge, and output that falls when workers die.
+- **Building projects** you can donate to, **market days** with extra stock and better prices, and **regional goods** (amber, jade, dye, spice, seal oil, blue salt) that are cheap at home and dear far away.
+- **Invest** in a town and draw a share each season. Expose **price rings**, or take a cut. Remote villages **barter**.
+- **Wage work and apprenticeships.** Ore veins and woods run out. **Embargoes** make smugglers of honest caravans. Each culture has its own **dishes**. Wells become feuds in droughts. **Tolls** on the roads, armies that **forage** the countryside, and **named caravans** that become famous.
+
+## People and society
+
+- **Karma and gossip:** towns remember what you did, and people retell your deeds, bigger each time. Tell tall tales and you may get caught out.
+- **Languages:** learn Horde speech, the old script or thieves' cant. Fluent enough, you can read captured Horde orders.
+- **Children inherit** gifts and values, and an heir starts with the family talent.
+- **Crime and investigations:** townsfolk commit crimes, and you can solve the cases. Your own unwitnessed killings can still be traced back to you.
+- **Weddings, funerals and namings** gather the town in the plaza. Local clothes help with locals. Freed captives resettle, careers change, masters teach secret techniques, taverns brawl, beggars beg, grief takes different paths, pilgrims walk the roads, and people keep diaries.
+
+## War and honour
+
+- **Factions with opinions** of each other and of you. Low Horde morale, or proof of the Mad King's lies, sets vassals rising.
+- **Conscription,** decaying bounties, **bounty hunters** and pardons. Raise your own **warband** and pay its wages. Take a fort, raise your banner, stock it, and hold it against counter-attacks.
+- **Propaganda** that bards can answer, **hostages and ransoms** exchanged at peace, militias, signal fires, **blockades** that close ferries, and **sappers** you can counter-mine.
+- **Heraldry:** every nation and noble house has a blazon and a painted shield, and so can you. Wars keep chronicles.
+
+## Lore and magic
+
+- **A real calendar** (Greening, Highsun, Leaffall, Deepcold) with named days, and anniversaries of history that folk still mark.
+- **Ruins to study and dig:** carvings that tell old history, lost precursor knowledge (an ever-burning lamp, a dew-still, a sun-glass lens), and archaeology layer by layer down to a buried artifact.
+- **Maps** bought from scholars (some of them wrong), ancient maps, and charts you draw yourself with the new **Cartography** skill.
+- **A bestiary** that fills in as you see, kill and butcher creatures. **Graveyards** with epitaphs. **Lost heirs** to fallen crowns. **Artifacts that wander:** five named relics per world change hands between adventurers, some of them sentient with opinions of you. Weapons that kill enough wake up.
+- **The Mad King's story** differs in every world. Commission your **biography**, and towns raise **statues** to you.
+- **Faith:** forsake one god for another (the old one won't forget), climb the temple ranks, carry relics on holy errands, and bargain with powers on new moons.
+- **Enchanting** for coin from the Circle of the Lantern. **Spell research** at a spellforge discovers Veil, Mend Flesh and Earthshake. **Ley lines** (with a map layer) make magic easier, and too much magic in one place draws things out of the air.
+- **Corruption** from crystal and ash lands changes your body. **Covens** of witches bring rain, curse rivals and sell brewing secrets. **Fey courts** appear on full moons in the woods and steal children. **Strange skies:** auroras, blood rain and ether winds. NPCs drink potions mid-fight, and you can collect and play **creature cards**.
+
+## Survival
+
+- **Heavy armour** hurts lockpicking and hearing. **Clothing layers** under your armour keep you warm, but wet layers freeze until you dry them by a fire.
+- **Frostbite takes fingers, toes or a nose,** and artificers fit brass fingers, a sprung foot or a silver nose.
+- **Diet:** go without fruit and you get scurvy; with no fish or salt, goitre; eat widely and you are hardier. **Grime and lice** build up in cities and ships, so wash in rivers or pay for a hot bath.
+- **The land changes:** rivers flood their banks, snow piles up (snowshoes and skis help), ice breaks underfoot in spring, volcanic lands quake and erupt, and tides open tidepools twice a day.
+- **Fire-making is a skill** that rain and wind fight. Leave **snares** out overnight, build **fish weirs**, cure hides into leather and sew your own coat.
+- **Foraging follows the seasons,** down to bark in a hungry winter. **Mountain sickness** at altitude. The smell of blood and smoke **draws predators** at night. Eating raw from a carcass may fill you, change you, or give you gut worms.
+- **You grow old:** slower and wiser every decade.
+
+## Life and travel
+
+- **A home port** where your ships are kept up, **ship parts** (hull, sails, ram, figurehead), harbour pilots and lighthouses for night sailing, and **getting lost at sea** without stars or a compass.
+- **Dive on wrecks,** raft rivers down to the sea, take **deep passages** between caves, and **climb** cliffs and town walls.
+- **Dungeons have ecology:** everything inside is there for a reason. Places you discover give you their **legends**, and a **journal of moments** pins your greatest deeds on a map. The world map shows the trail you have walked and places you have only heard of.
+- **Roads overgrow** when towns die. **Burn bridges** to turn armies back. Give **companions** orders and gear.
+- **Fishing contests and harvest fairs.** **Your past catches up with you:** an old enemy, a lost sibling or an old mentor, depending on your background.
+- **Smugglers' coves** and contraband runs, **hot springs and geysers**, and **retirement** on your own terms.
+
+## The engine underneath
+
+- **Bigger worlds:** *Vast* is now the default, and a new *Titanic* scale is six times *Standard*.
+- **Off-screen battles keep their dead,** with named casualties and veterans who remember where they fought. **Townsfolk weigh their needs** (food, company, faith, coin and safety) and you can see what each person is doing.
+- **Corpses become bones,** and food left out rots. A **region stats** layer on the map shows prosperity, Horde control and faith. At the end, **watch the world's history** as a time-lapse.
+- **Scenario starts:** a besieged town, a shipwreck, or an escape from a Horde camp. **Simulation sliders** for army speed, winters and hunger.
+- **Demo tools:** a **god view** to watch the world without you, and an **autoplay bot** that plays thousands of turns and reports errors and stuck states. A **frame budget** precomputes when the browser is idle and drops decorative overlays on slow devices.
+- **A new look:** legible meters, a compact phone HUD, a colour-coded log, a framed map, soft fog edges, and long dialogue lists grouped into sections.
+
 ## Mods
 
 The game supports **JSON mods** for new creatures, items, spells, starting kits, recipes, wildlife, rumors, and simple events. Install them from **Menu → Mods.** See [docs/MODDING.md](docs/MODDING.md) and the example [Marsh Folk](docs/mods/marsh-folk.json) mod.
@@ -347,6 +417,7 @@ The game is plain JavaScript with no dependencies, in `src/00_core.js` through `
 ```bash
 ./build.sh                      # rebuild index.html
 node tests/smoke.js seed1,seed2 # browser fuzz test (requires playwright)
+node tests/bot.js 4000 1,2,3 vast # autoplay bot: errors, stuck states, save/load
 ```
 
 The original hackathon version (one continent, three shards) lives in [`classic/`](classic/).
