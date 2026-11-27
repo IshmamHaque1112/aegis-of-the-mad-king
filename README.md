@@ -142,7 +142,7 @@ All 26 reagents carry four hidden properties out of 24, reshuffled in every worl
 
 ## Also in the box
 
-- 167 creature and NPC types, 154 items, 59 recipes, 10 mounts, and 24 vehicles.
+- 170 creature and NPC types, 154 items, 59 recipes, 10 mounts, and 24 vehicles.
 - Morrowind-style spell invention: combine up to 4 of 27 effects.
 - Enchanted forging, farming, building shelters, and buying an empty house in any village.
 - Hiring sellswords, taming pets, and procedural pixel art throughout.
