@@ -126,6 +126,75 @@ h1,h2,h3{font-family:"Pirata One",serif;font-weight:400;letter-spacing:.02em;mar
 @media (max-width:899px){ .main{grid-row:2} .bottom{grid-row:3} }
 @media (max-height:640px) and (max-width:899px){#log{height:48px}.pad{grid-template-columns:repeat(3,34px);grid-template-rows:repeat(3,34px)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<style id="v3">
+/* ===== Visual overhaul (v3): legible meters, a calmer HUD on phones, a log that reads like a chronicle, framed map ===== */
+:root{--gold:#e8b64c;--gold2:#ffd27a;--glow:rgba(232,182,76,.22);--shadow:0 10px 30px rgba(0,0,0,.45);--r:10px}
+body{background:radial-gradient(1200px 700px at 50% -10%,#18202c 0,var(--bg) 60%)}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#2f3a4a;border-radius:8px}::-webkit-scrollbar-track{background:transparent}
+/* meters */
+.mt{height:22px;border-radius:7px;background:linear-gradient(#070a0f,#0d121a);border:1px solid #2a3443;box-shadow:inset 0 1px 3px rgba(0,0,0,.6)}
+.mt i{border-radius:6px 0 0 6px;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -2px 0 rgba(0,0,0,.18)}
+.mt b{font:700 12px/20px "Alegreya Sans",system-ui,sans-serif;letter-spacing:.02em;color:#fff8ea;text-shadow:0 1px 2px rgba(0,0,0,.95),0 0 4px rgba(0,0,0,.7)}
+.mt.low{border-color:#e0604f}
+/* status line */
+.info{font-size:14px;gap:12px}.info #when{letter-spacing:.02em}#where{color:#d8ccb2}#who{color:#8e98a8}
+#badges{gap:5px}.bdg{font:600 11.5px/18px "Alegreya Sans",sans-serif;padding:0 9px;border-radius:99px;background:#1c2430;border:1px solid #34404f;color:#cfc3a8;white-space:nowrap}
+.bdg::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:5px;vertical-align:1px;opacity:.8}
+.bdg.bad{color:#ffb4a8;border-color:#7a3228;background:#2b1715}.bdg.good{color:#b8f0a8;border-color:#3d6a32;background:#16241a}.bdg.warn{color:#ffd88a;border-color:#7a5a20;background:#2a2112}
+/* map frame */
+#mapbox{position:relative}
+#mapbox::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 58%,rgba(5,7,11,.55) 100%);z-index:1}
+#mini{border:1px solid #6a5426;border-radius:9px;box-shadow:0 0 0 3px rgba(10,13,18,.85),0 8px 22px rgba(0,0,0,.65);z-index:2}
+.zoom{z-index:2}.zoom button{background:rgba(22,28,38,.88);border:1px solid #34404f;border-radius:9px;backdrop-filter:blur(4px);box-shadow:0 4px 12px rgba(0,0,0,.4)}
+.zoom button:hover{border-color:var(--gold)}
+/* log as a chronicle */
+#log{background:linear-gradient(#0b0f15,#0e131b);border:1px solid #2a3443;border-radius:var(--r);padding:6px 8px;box-shadow:inset 0 2px 8px rgba(0,0,0,.45)}
+#log p{margin:2px 0;padding:1px 0 1px 8px;border-left:2px solid transparent;opacity:.62;transition:opacity .2s}
+#log p:nth-last-child(-n+4){opacity:.85}#log p:last-child{opacity:1}
+#log p.good{border-left-color:#5fbf6a}#log p.bad{border-left-color:#e0604f}#log p.warn{border-left-color:#e8b64c}#log p.story{border-left-color:#c79bff;color:#e8dcff}#log p.season{border-left-color:var(--acc);color:var(--acc);font-weight:700}#log p.wx{color:#9fc6e0;border-left-color:#4b7fa8}#log p.hint{border-left-color:#4b6a88}#log p.say{border-left-color:#b89a60;font-style:italic}
+/* quick slots */
+.qs{border-radius:9px;background:linear-gradient(#1c2430,#18202a);border-color:#2f3a4a;transition:border-color .15s,transform .05s}.qs:hover{border-color:var(--gold)}
+.qs.empty{opacity:.55;background:transparent;border:1px dashed #3a4656;justify-content:center}.qs.empty::before{content:"+";font:700 14px "Alegreya Sans";color:#6e7a8c;margin-right:2px}
+/* buttons, pad and actions */
+.btn{border-radius:9px;box-shadow:0 2px 0 rgba(0,0,0,.35)}.btn:hover{background:#273142}
+.btn.pri{box-shadow:0 2px 0 #6a4810,0 0 22px var(--glow)}
+.pad button{background:linear-gradient(#1d2531,#171e28);border-color:#2f3a4a;border-radius:9px;box-shadow:0 2px 0 rgba(0,0,0,.35)}.pad button:hover{border-color:#5a6a80}
+#here{background:linear-gradient(#3a2c12,#2a200d);border-color:#8a6a2a;color:var(--gold2)}
+.acts button{background:linear-gradient(#1d2531,#171e28);border-color:#2f3a4a;border-radius:9px;box-shadow:0 2px 0 rgba(0,0,0,.35);transition:border-color .15s}.acts button:hover{border-color:#5a6a80}
+.acts button small{opacity:.8}
+/* sheets */
+#sheet{backdrop-filter:blur(3px)}
+.sheetbox{background:linear-gradient(#1b232f,#171e28);border-color:#344052;box-shadow:var(--shadow),0 0 0 1px rgba(0,0,0,.4)}
+.sheethd{background:linear-gradient(#1b232f 70%,rgba(27,35,47,.0));border-bottom:0;position:sticky}
+.sheethd::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#8a6a2a 20%,#8a6a2a 80%,transparent)}
+.sheethd h2,.sheethd h3{color:var(--gold2);text-shadow:0 2px 0 #3a250a}
+.opt{position:relative;border-radius:10px;background:linear-gradient(#212a37,#1d2531);border-color:#313d4e;transition:border-color .15s,background .15s,transform .08s}
+.opt:hover,.opt:focus-visible{border-color:#8a6a2a;background:linear-gradient(#26303f,#212a37)}
+.opt::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:3px;border-radius:3px;background:transparent;transition:background .15s}
+.opt:hover::before,.opt:focus-visible::before{background:var(--gold)}
+.opt.pri{border-color:#7a5a20;background:linear-gradient(#2c2414,#231d12)}.opt.pri span{color:var(--gold2)}
+.opt.bad{border-color:#5a2a24}.opt.bad span{color:#ffb4a8}.opt.bad:hover::before{background:#e0604f}
+.opt[disabled]{opacity:.45;filter:saturate(.4)}
+.opt small{color:#9a9080}
+.qline{border-radius:8px}
+.char h4{font-family:"Pixelify Sans";letter-spacing:.08em;color:var(--acc);border-bottom:1px solid #2a3443;padding-bottom:4px}
+canvas.worldmap,canvas.journalmap{box-shadow:0 0 0 1px #2a3443,0 10px 26px rgba(0,0,0,.5);border-radius:10px}
+.maplayers{gap:6px;flex-wrap:wrap}
+/* title */
+#title .btn{min-width:240px;font-size:19px}
+#title .btn:first-of-type{background:linear-gradient(#e8b64c,#c48d2a);border-color:#f3cf7a;color:#1b1206;font-weight:700;box-shadow:0 3px 0 #6a4810,0 0 30px var(--glow)}
+/* phones: a slimmer HUD */
+@media (max-width:899px){
+ .hud{gap:3px;padding:5px 8px 4px}
+ .meters{grid-template-columns:repeat(3,1fr)!important;gap:4px 5px}
+ .mt{height:19px;border-radius:6px}.mt b{font-size:11.5px;line-height:17px}
+ .info{font-size:12.5px;gap:8px}
+ #badges{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent)}#badges::-webkit-scrollbar{display:none}
+ .bdg{font-size:11px;line-height:17px}
+ #log{font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head><body>
 <div id="title" class="screen" hidden><canvas id="tcv"></canvas><div class="tvig"></div><div class="tin">
 <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiPgo8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmQ3N2EiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiODgwMWUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNhNWQ4NiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MmE0MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgo8cGF0aCBkPSJNNjQgNiBMMTEyIDIyIEwxMDggNzAgQzEwNCA5NiA4NiAxMTIgNjQgMTIyIEM0MiAxMTIgMjQgOTYgMjAgNzAgTDE2IDIyIFoiIGZpbGw9IiMyYTFhMDgiIC8+CjxwYXRoIGQ9Ik02NCAxMiBMMTA2IDI2IEwxMDIgNjkgQzk4IDkyIDgyIDEwNiA2NCAxMTUgQzQ2IDEwNiAzMCA5MiAyNiA2OSBMMjIgMjYgWiIgZmlsbD0idXJsKCNnKSIvPgo8cGF0aCBkPSJNNjQgMjAgTDk4IDMxIEw5NSA2NyBDOTIgODcgNzkgOTkgNjQgMTA3IEM0OSA5OSAzNiA4NyAzMyA2NyBMMzAgMzEgWiIgZmlsbD0idXJsKCNzKSIvPgo8cGF0aCBkPSJNNjQgMjAgTDY0IDEwNyBNNjQgMjAgTDU4IDQ2IEw2OCA2MCBMNjAgNzggTDY2IDEwNyIgc3Ryb2tlPSIjZmZkNzdhIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPHBhdGggZD0iTTQ0IDQwIEw1MCAzMiBMNTYgNDAgTDY0IDMwIEw3MiA0MCBMNzggMzIgTDg0IDQwIEw4MiA1MiBMNDYgNTIgWiIgZmlsbD0iI2ZmZDc3YSIgc3Ryb2tlPSIjNWEzYTEwIiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iNjQiIGN5PSI0NCIgcj0iMy41IiBmaWxsPSIjZTA2MDRmIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSI0NiIgcj0iMi41IiBmaWxsPSIjNmZiM2UwIi8+PGNpcmNsZSBjeD0iNzYiIGN5PSI0NiIgcj0iMi41IiBmaWxsPSIjN2ZjNDdhIi8+CjxjaXJjbGUgY3g9IjY0IiBjeT0iNzYiIHI9IjkiIGZpbGw9IiMwZDExMTciIHN0cm9rZT0iI2ZmZDc3YSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48Y2lyY2xlIGN4PSI2NCIgY3k9Ijc2IiByPSIzLjUiIGZpbGw9IiNlMDYwNGYiLz4KPC9zdmc+Cg==" alt="">
@@ -4300,4 +4369,8 @@ window.claude?.hot?.ready?window.claude.hot.ready(start):start(window.claude?.ho
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)&&!window.claude)navigator.serviceWorker.register('sw.js').catch(()=>{});
 // ===== NEW WORLD OPTIONS: scenario starts and simulation sliders (loads after the UI defines WOPTS) =====
 WOPTS.push(['scenario','Starting situation',[['none','An ordinary start'],['siege','Your town is under siege'],['wreck','Shipwrecked on a strange shore'],['escaped','Escaped from a Horde camp']],'none'],['armies','Army speed',[[.5,'Slow'],[1,'Normal'],[1.5,'Fast']],1],['winters','Winters',[['mild','Mild'],['normal','Normal'],['harsh','Deadly']],'normal'],['hungerRate','Hunger and thirst',[[.7,'Forgiving'],[1,'Normal'],[1.3,'Harsh']],1]);
+// ===== VISUAL OVERHAUL: textured unknown, soft fog edges where the explored world meets the dark =====
+let FOGPAT=null;
+function fogPattern(x){if(FOGPAT)return FOGPAT;const c=document.createElement('canvas');c.width=c.height=48;const g=c.getContext('2d');g.fillStyle='#080b10';g.fillRect(0,0,48,48);let s=1337;const r=()=>((s=(s*16807)%2147483647)/2147483647);for(let i=0;i<70;i++){g.fillStyle=`rgba(${120+r()*60|0},${120+r()*50|0},${140+r()*60|0},${.025+r()*.05})`;g.fillRect(r()*48|0,r()*48|0,1+(r()*2|0),1)}g.strokeStyle='rgba(120,130,150,.035)';g.lineWidth=1;for(let i=-48;i<48;i+=6){g.beginPath();g.moveTo(i,48);g.lineTo(i+48,0);g.stroke()}FOGPAT=x.createPattern(c,'repeat');return FOGPAT}
+const _vDraw=draw;draw=function(){_vDraw();try{if(!G||!G.p||UI.lowFx)return;const cv=$('#map');if(!cv)return;const x=cv.getContext('2d');const T=UI.tile;const{vx,vy}=view();const pat=fogPattern(x);const seen=(tx,ty)=>inb(L,tx,ty)&&seenAt(tx,ty);const E=Math.max(4,Math.round(T*.45));x.save();for(let j=0;j<UI.rows;j++)for(let i=0;i<UI.cols;i++){const tx=vx+i,ty=vy+j;if(!seen(tx,ty)){x.fillStyle=pat;x.fillRect(i*T,j*T,T,T);continue}const n=!seen(tx,ty-1),s=!seen(tx,ty+1),w=!seen(tx-1,ty),e=!seen(tx+1,ty);if(!(n||s||w||e))continue;const X=i*T,Y=j*T;let gr;if(n){gr=x.createLinearGradient(0,Y,0,Y+E);gr.addColorStop(0,'rgba(8,11,16,.9)');gr.addColorStop(1,'rgba(8,11,16,0)');x.fillStyle=gr;x.fillRect(X,Y,T,E)}if(s){gr=x.createLinearGradient(0,Y+T,0,Y+T-E);gr.addColorStop(0,'rgba(8,11,16,.9)');gr.addColorStop(1,'rgba(8,11,16,0)');x.fillStyle=gr;x.fillRect(X,Y+T-E,T,E)}if(w){gr=x.createLinearGradient(X,0,X+E,0);gr.addColorStop(0,'rgba(8,11,16,.9)');gr.addColorStop(1,'rgba(8,11,16,0)');x.fillStyle=gr;x.fillRect(X,Y,E,T)}if(e){gr=x.createLinearGradient(X+T,0,X+T-E,0);gr.addColorStop(0,'rgba(8,11,16,.9)');gr.addColorStop(1,'rgba(8,11,16,0)');x.fillStyle=gr;x.fillRect(X+T-E,Y,E,T)}}x.restore()}catch(e){}};
 </script></body></html>
