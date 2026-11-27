@@ -52,9 +52,52 @@ Each sub-king has one of ten weaknesses: pride, greed, paranoia, faith, starvati
 - **Hazards:** Horde pirate ships and rafts carry cannons. Sharks, sea serpents, and krakens attack everyone. If your ship goes down, you may haul yourself onto a raft lashed from the wreckage.
 - **Other travel:** fish with rods, nets, and harpoons, or book passage on a ferry between ports.
 
+## Vehicles
+
+<p align="center"><img src="docs/media/vehicles.gif" width="720" alt="Driving a war chariot while a nation army with a war wagon and bombard clashes with a Horde warband, scythed chariot and catapult"></p>
+
+There are 24 vehicles, and anyone can drive them: you, your companions, villagers, merchants, soldiers, pirates, and the Horde.
+
+| | Vehicles |
+|---|---|
+| **Wheels** | Handcart, covered wagon, war chariot, Horde scythed chariot, armored war wagon (musket volleys), bombard cart, field ballista, catapult, battering ram |
+| **Snow, ice, and sand** | Dog sled, ice yacht, sand skiff |
+| **Precursor machines** | Clockwork strider (walks through forests and shallows, fires a sun-beam) and solar crawler. Both run on sunlight. |
+| **Water** | Canoe, rowboat, raft, longship, river barge, merchant cog, war galley (rowed, with a bronze ram), pirate sloop, war galleon |
+| **Air** | Hot-air balloon (burns firewood, drifts with the wind) and rune skiff (burns arcane dust) |
+
+How they work:
+- **Power:** wagons and chariots need a draft animal. Ride up on your horse to hitch it, or hitch a tame ox, camel, or elephant. Sails follow the wind, galleys row faster with more crew, solar machines recharge in daylight, and flyers burn fuel.
+- **Getting one:** buy from stablemasters, shipwrights, smiths, artificers, witches, nomads, and islanders, or build one yourself.
+- **Fighting with them:** chariots run people down, war wagons fire volleys, rams smash gates, catapults lob stones over walls, and vehicles soak up hits aimed at their riders.
+- **NPC drivers:**
+  - Nation armies roll out war wagons, bombards, and chariots, and Horde warbands bring scythed chariots, catapults, and rams.
+  - Caravans travel in wagons, and fisherfolk row out by day.
+  - Frightened or hostile NPCs grab an unattended vehicle, including yours, and drive off in it.
+  - You can steal theirs, or hand the reins to a companion.
+
+## Battle magic
+
+Every army has casters with their own spellsets:
+- **Nations:** war wizards (fireball, frost, ward) and battle chaplains (heal, bless, ward, fear). Northern forces field rune-casters.
+- **The Horde:** warlocks (fireball, hex, fear, raise dead), war-mages, and bone-shamans.
+- **Others:** bandit hedge mages (sleep, blink, charm, gust), pirate storm-callers, dune seers, and island sea witches.
+
+Casters ward wounded allies and bless the battle line. The new spells (Fireball, Ward, Battle Blessing, Hex) can also be learned from scrolls.
+
+## Oceans, islands, and archipelagos
+
+<p align="center"><img src="docs/media/voyage.gif" width="720" alt="Sailing a pirate sloop up to a frozen island village with fisherfolk out in canoes"></p>
+
+- **Archipelagos:** island chains fill the seas between continents, and empty ocean regions become great archipelagos. Each has a theme: tropical isles, coral atolls with lagoons, green isles, frozen skerries, smoking fire isles, sun-bleached cays, or mist isles of crystal and fungus.
+- **Island sites:** islander fishing villages, pirate coves, lighthouses, shipwrecks guarded by giant crabs and drowned sailors, castaways to rescue, sea witches, merfolk lagoons, roc and harpy rookeries, ruins, shrines, and smuggler camps.
+- **Island wildlife:** sea turtles, dragon lizards, coconut crabs, penguins, walruses, and marine iguanas.
+- **At sea:** dolphins, whales, manta rays, sea snakes, and jellyfish blooms.
+- **Mapping:** lighthouse keepers and islanders mark nearby islands and wrecks on your map.
+
 ## The world map
 
-Choose between 6 and 10 continents, at Standard, Vast (2.25× area), or Colossal (4× area) scale. You can also tune sea level, climate, rainfall, rivers, islands, nations, Horde strength, monsters, wildlife, ruins, and history length. Use a seed or today's daily seed.
+Choose between 6 and 10 continents, at Standard, Vast (2.25× area), or Colossal (4× area) scale. Each continent takes one of nine shapes: broad, long, twin-lobed, crescent around a great bay, star of peninsulas, ring around an inland sea, shattered into islands, fjord-cut, or a narrow mountain spine. Horde forts and bandit camps keep well away from the towns they threaten, though vassal nations live in their shadow. You can also tune sea level, climate, rainfall, rivers, islands, nations, Horde strength, monsters, wildlife, ruins, and history length. Use a seed or today's daily seed.
 
 <p align="center"><img src="docs/media/worldgen.png" width="820" alt="Six generated worlds with different settings"></p>
 
@@ -99,7 +142,7 @@ All 26 reagents carry four hidden properties out of 24, reshuffled in every worl
 
 ## Also in the box
 
-- 142 creature and NPC types, 150 items, 59 recipes, and 9 mounts.
+- 167 creature and NPC types, 154 items, 59 recipes, 10 mounts, and 24 vehicles.
 - Morrowind-style spell invention: combine up to 4 of 27 effects.
 - Enchanted forging, farming, building shelters, and buying an empty house in any village.
 - Hiring sellswords, taming pets, and procedural pixel art throughout.

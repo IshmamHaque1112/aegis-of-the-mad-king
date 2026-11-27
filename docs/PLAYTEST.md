@@ -26,6 +26,25 @@
 | Offensive spells were offered on your own tile. | Hidden. |
 | The world map fog drew as a grid. | Now smoothed. |
 
+## Round 2: vehicles, islands, and battle magic
+I tested this round with a scripted check:
+- I drove every one of the 24 vehicles for 14 moves and fired each mounted weapon.
+- I checked that NPC armies spawn with vehicles and move them, and that a fleeing raider steals a parked wagon about 60% of the time.
+- I fought a full nation-versus-Horde battle with casters warding, blessing, hexing, and throwing fireballs.
+- I visited every island site type and rescued a castaway.
+- I round-tripped a save with vehicles and islands, then re-ran the fuzz test.
+
+| Found | Fix |
+|---|---|
+| A mounted player couldn't board most vehicles. | The rider now dismounts automatically and leaves the horse tied nearby, or hitches it if the vehicle needs a draft animal. |
+| Island huts never spawned because trees counted as blocked ground. | Fixed. |
+| The vehicle and island data didn't survive a save (a Map in the save). | Now rebuilt from the seed instead of saved. |
+| Fleeing NPCs rarely reached a vehicle before running past it. | They now grab one far more eagerly. |
+
+New known issues:
+- A parked land vehicle can be climbed over by people. That avoids blocked gates, but pedestrians and a parked cart can share a tile.
+- NPC boats can get stranded in small inlets.
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.
