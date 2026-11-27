@@ -183,6 +183,45 @@ Settlements **grow, shrink, and fall to ruin.** A town that empties becomes a ru
 
 Wildlife lives too. Animals keep **dens,** breed in spring, starve in hard winters, and thin out where you overhunt. Bears and others **hibernate** (and wake up angry if disturbed), and herds **migrate** between summer and winter ranges.
 
+## Family, home and land
+
+- **Farm in cycles.** Soil tires when you plant the same crop twice, recovers when left fallow, and comes back faster with manure from your ranch. Weeds choke yields, blight strikes in droughts, and ranch animals need hay to get through winter.
+- **Court and marry.** Spend time with someone, bring gifts, and propose once they love you. Your spouse keeps a home, writes to you, and you may have children.
+- **Your line goes on.** When you die, carry on as your spouse, a grown child or stepchild, or anyone you named as your heir. They inherit your coin, savings, property, half your fame (and half your bounties), and your weapon as an heirloom.
+- **Found a settlement.** Buy a charter from a ruler, choose the land, and set taxes. Build a palisade, granary, shrine, inn or watchtower. Fed and fairly taxed settlers attract more settlers; overtaxed ones leave, and in the end throw you out.
+- **Counting houses** in towns hold savings that earn interest and pass to your heir, and lend money that has to be paid back on time.
+- **Taxes and tithes.** Rulers tax your property every season, more under greedy rulers or in wartime. Skip it and you're wanted. Tithe at an altar for piety.
+
+## A world that talks
+
+<p align="center"><img src="docs/media/living_world2.png" width="820" alt="The Legends browser, letters, realms at war, and courting on a phone"></p>
+
+
+- **Letters.** Write to people you've met. Couriers really walk the roads, so letters take time and bandits can take them. Replies bring news, thanks, or a few coins from friends. Officials write to you about taxes and debts.
+- **Intercept the post.** Townsfolk send letters too. Rob a courier and you may find an affair to blackmail, a crown scandal to sell, a tip that grain prices are about to rise, or a buried cache that is really there.
+- **News travels.** Every event spreads outward at the speed of travel. Ask town officials for word from other towns, or buy a broadsheet.
+- **Books.** Write a memoir of your deeds, a history of the land, a guide to your best skill, or a slanderous pamphlet. Scholars copy and sell them, copies spread along the roads, and you earn royalties. Libraries sell chronicles that reveal places, bestiaries, and skill guides.
+- **Prophecies come true.** Seers speak of a ruler's death, a famine, fire from the sky, a war, or a hero's rise, and the world really does it on schedule. Some can be stopped: catch the assassin, fill the granary, or talk the crowns out of war.
+- **The Legends browser** searches the whole history by year, person or place, and now keeps what happened during play when you load a save.
+
+## Realms at war
+
+- **Nations go to war** with each other over border incidents and rulers' ambitions. Armies march on enemy towns, and borders really move. Long wars wear both sides down until one sues for peace, sometimes paying tribute.
+- **Diplomacy:** relations drift with rulers' goals and shared enemies. Royal marriages make alliances, and allies join wars.
+- **Take part:** enlist for daily pay and fight in nearby battles, or carry peace terms between rulers as an envoy.
+- **Unrest and uprisings:** taxes, famine, war and scandal stir people up. An uprising can win lower taxes, topple the ruler, or be crushed, and you can join either side.
+
+## The living land
+
+- **Daily routines:** townsfolk work by day, eat at the tavern at noon, shop at the market, pray on holy days, and drink in the evening. Guards change shifts and children play in the square. Ask anyone where to find someone.
+- **Epidemics** such as the Sweating Sickness and Ashpox spread with caravans, refugees, couriers and armies. Towns close their gates, and bringing medicine to healers leads to a cure that healers then sell.
+- **Weather fronts** move across the map: storms, rain, blizzards, fog banks and slow droughts. They wreck boats, flood river towns, wither crops, and set the sky over you. The Legends browser gives a forecast.
+- **Lairs refill and grow.** Cleared camps and dungeons are reoccupied after a while, and lairs left alone grow until they send raids against nearby villages.
+- **Predators and prey** rise and fall on each continent. When game runs out, starving packs come down on the farms. Wyrms raid towns for livestock.
+- **Seasonal festivals** (the Greening Fair, Longday Games, Sheaf Festival and Lantern Night) bring contests: archery, wrestling, drinking, riddles, horse races and jousts against locals and rival adventurers.
+- **Companions have opinions** based on their values. They cheer good deeds and object to cruelty or theft. Devoted ones fight harder; disgusted ones leave, and greedy, dishonest ones may rob you on the way out.
+- **Maker's marks:** forged and bought gear remembers who made it, where and when, and everyone who carried it. Famous smiths make Fine and Masterwork pieces, and a weapon with enough kills earns its own name.
+
 ## Mods
 
 The game supports **JSON mods** for new creatures, items, spells, starting kits, recipes, wildlife, rumors, and simple events. Install them from **Menu → Mods.** See [docs/MODDING.md](docs/MODDING.md) and the example [Marsh Folk](docs/mods/marsh-folk.json) mod.

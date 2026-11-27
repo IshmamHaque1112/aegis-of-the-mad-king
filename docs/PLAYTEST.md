@@ -78,6 +78,19 @@ Twenty new systems went in (stats and skills, economy, harvests, people as recor
 - **The world seed box overflowed** on narrow phones. Fixed.
 - **Prices look flat when towns are well stocked,** and births are rare. Both are by design for now, but worth tuning.
 
+## Round 5: family, letters, wars, and the living land
+
+Twenty more systems went in, with a new automated check for each one, plus 70-day soaks on several seeds and desktop and phone screenshots.
+
+- **Towns had no buildings.** In every world tested, towns had only merchants and guards: no ruler, palace, smith, healer, temple, scholar or inn. Every plot was checked with a one-tile margin, and since all plots border a street, the margin always failed. Plots are now checked on their own footprint, and a building that doesn't fit moves to the next plot. Towns now have their full set of people.
+- **History written during play was lost on loading a save.** It's now saved separately and restored.
+- **The chronicle recorded events twice,** once as news and once under the player's name. Each event is now recorded once.
+- **Replies showed doubled quote marks** in several conversations from earlier rounds. Fixed in one place.
+- **New-moon assassins could kill a brand-new character on the first night.** Characters now get three days' grace.
+- **Lairs:** the first version marked every monster lair as empty because lair monsters live in roaming bands, not in the lair's population. It now tracks kills near the lair and enemies inside its dungeon levels.
+- **Balance:** wars were too frequent and never ended, prophecies came too often, and plagues were rare. All three are tuned.
+- **Gifts:** courting offered your equipped weapon as a gift. It no longer does.
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.

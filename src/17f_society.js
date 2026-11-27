@@ -15,8 +15,8 @@ const _dieF=die;die=function(c,src,kind){if(c&&!isP(c)&&src&&isP(src)){RT.killXP
 function recOf(c){if(!c||c.site===undefined||c.rec===undefined)return null;const s=G.sites[c.site];return s&&s.pop?s.pop[c.rec]:null}
 // ---- live history
 function histAdd(t,s,w){G.history=G.history||[];G.history.push({y:yearNum(),t,c:s?s.cont:null,live:1});if(G.history.length>400)G.history.splice(0,G.history.length-400)}
-const _logEventF=logEvent;logEvent=function(t,s,w){_logEventF(t,s,w);if(/fell|fallen|captured|razed|liberat|deposed|died|crowned|famine|founded|abandoned|succession|civil war|plague|broke|retake|routed .*army/i.test(t)||(w||0)>=2)histAdd(t,s,w)};
-const _storyF=story;story=function(t,w){const r=_storyF(t,w);if((w||0)>=3)histAdd(G.p.name+': '+t,{cont:(contAt(G.p.x,G.p.y)||{}).id},w);return r};
+const _logEventF=logEvent;logEvent=function(t,s,w){RT.inLog=1;try{_logEventF(t,s,w)}finally{RT.inLog=0}RT.histT=G.turn;if(/fell|fallen|captured|razed|liberat|deposed|died|crowned|famine|founded|abandoned|succession|civil war|plague|broke|retake|routed .*army/i.test(t)||(w||0)>=2)histAdd(t,s,w)};
+const _storyF=story;story=function(t,w){const r=_storyF(t,w);if((w||0)>=3&&!RT.inLog&&RT.histT!==G.turn)histAdd(G.p.name+': '+t,{cont:(contAt(G.p.x,G.p.y)||{}).id},w);return r};
 // ---- settlement economies
 const ECON_T=['village','town','port','hvillage','nomads','islevillage','fort','hfort','citadel'];
 const GOODS={grain:'grain',meat:'meat',fish:'fish',timber:'timber',ore:'ore',cloth:'cloth',tools:'tools',ale:'ale',herbs:'herbs'};
