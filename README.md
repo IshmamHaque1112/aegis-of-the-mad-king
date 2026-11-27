@@ -222,6 +222,37 @@ Wildlife lives too. Animals keep **dens,** breed in spring, starve in hard winte
 - **Companions have opinions** based on their values. They cheer good deeds and object to cruelty or theft. Devoted ones fight harder; disgusted ones leave, and greedy, dishonest ones may rob you on the way out.
 - **Maker's marks:** forged and bought gear remembers who made it, where and when, and everyone who carried it. Famous smiths make Fine and Masterwork pieces, and a weapon with enough kills earns its own name.
 
+## Legends, fame and the dead
+
+<p align="center"><img src="docs/media/legends_crime.png" width="820" alt="The danger map overlay, a ghost, games of chance, and scars and titles on the character sheet"></p>
+
+
+- **Legendary beasts:** each continent has named monsters, such as Ashmaw the wolf or Old Belly the boar, that kill herders, grow stronger every year they live, and show up in rumors. Locals can tell you where one was last seen. Kill one and you keep its hide.
+- **Animals remember you.** Hunt a pack's kin and the survivors in that country hunt you back. Feed a species and it leaves you be.
+- **Fame** follows your deeds. Strangers greet you by name, admirers bring gifts, challengers come to town to test you in a duel, and you earn epithets such as Beastslayer, Hordebane, Peacemaker or the Whisperer.
+- **Songs:** inn singers make verses from what really happened, including your deeds. You can also perform for tips.
+- **The restless dead:** people who died badly haunt their villages at night until you put their story right, whether that's a candle at a grave, a message to their family, or justice for their killer.
+- **Dreams and omens:** sleeping can reveal prophecies or the road to a sub-king, though killers dream of their victims. Omens such as two-headed calves, red rain and forked comets appear before a prophecy comes true.
+
+## Coin, crime and comforts
+
+- **Commissions:** order a weapon or armor from a smith, pay half, and collect it days later with your name on it.
+- **Each nation mints its own coin.** Foreign coin costs a little extra; money-changers swap it for a fee. The Horde pays in scrip that only fences and Horde vassals will take.
+- **Black markets** in back rooms: fence goods, sell scrip, and buy poison, bombs, lockpicks and forged papers.
+- **Gambling:** roll the bones or play Three Crowns at inns. You can cheat, if you dare.
+- **Food spoils.** Raw meat and fish go off within days; salt and winter cold keep them longer. Eating spoiled food can make you sick.
+- **Informants** in foreign courts send reports and secrets. **Contracts:** the underworld pays you to kill named people, and if enough people hate you, someone pays an assassin to come after you.
+
+## Hard times and honors
+
+- **Moods:** people feel hunger, fear, plague, war and grief, and it shows in how they talk to you and how easily you persuade them. The bereaved drink at the tavern, and if you killed their spouse, they come for you.
+- **Occupation:** towns the Horde captures keep a resistance. Kill the garrison, smuggle in weapons or pay for hiding places, then give the signal to rise.
+- **Honors:** serve a crown to become Friend of the Crown, then Knight (a stipend and lower prices, but you must answer every call to war or lose the title), then Baron (no crown tax, a land grant, and a free settlement charter).
+- **Winter passes:** mountain roads close in winter unless you brave the snow.
+- **Wounds and scars:** big hits can concuss you or crack your ribs, and unbound wounds can fester into fever. Bad wounds leave scars; a scarred face impresses bandits more than nobles.
+- **Companions grow and are mourned.** They level up from their own kills. When one dies, you mark the grave, the others grieve, and you can swear vengeance on the killer.
+- **Map overlays** show realms and wars, food and trade, danger (Horde, lairs, legendary beasts, bounties), and plague and weather.
+
 ## Mods
 
 The game supports **JSON mods** for new creatures, items, spells, starting kits, recipes, wildlife, rumors, and simple events. Install them from **Menu → Mods.** See [docs/MODDING.md](docs/MODDING.md) and the example [Marsh Folk](docs/mods/marsh-folk.json) mod.

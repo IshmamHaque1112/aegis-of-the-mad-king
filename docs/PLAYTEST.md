@@ -91,6 +91,16 @@ Twenty more systems went in, with a new automated check for each one, plus 70-da
 - **Balance:** wars were too frequent and never ended, prophecies came too often, and plagues were rare. All three are tuned.
 - **Gifts:** courting offered your equipped weapon as a gift. It no longer does.
 
+## Round 6: legends, crime, honors and wounds
+
+Twenty more systems, each with its own automated check, plus the full regression suite and multi-seed soaks.
+
+- **Explosions were delayed by a day.** Last round's war module defined a helper with the same name as a core one, so firebombs and powder kegs waited for the next daily tick. Renamed, and I checked the whole codebase for other name clashes.
+- **A duplicate wrapper name** in this round stopped the game from loading at all. Caught by a syntax check of the built file, which is now part of every build.
+- **Legendary beasts grew too fast** (level 13 after three in-game years, with eight times normal health). They now grow about once a year, cap at level 10, and scale more gently.
+- **Lairs cleared by rival adventurers refilled at once.** They now wait like any other cleared lair.
+- **Small fixes:** the character sheet read "Known as Rook Knight"; titles are now listed separately. Ghosts that want a candle now tell you where to get one, and priests, merchants and innkeepers sell candles.
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.
