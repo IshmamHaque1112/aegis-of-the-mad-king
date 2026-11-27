@@ -103,3 +103,5 @@ const _playerCastT=playerCast;playerCast=function(s,x,y){const n=G.log.length,l=
 sitesOf=function(cont,pred){return G.sites.filter(s=>s.cont===cont&&s.isle===undefined&&pred(s))};
 // beasts of the same kind don't wage war on each other off-screen
 const _abBattleT=abstractBattle;abstractBattle=function(a,c){if(a.fac===c.fac&&(a.fac==='beast'||a.fac==='plague'))return;if((a.kind==='monster'||a.kind==='herd')&&(c.kind==='monster'||c.kind==='herd')&&a.members[0]&&c.members[0]&&a.members[0].s===c.members[0].s)return;return _abBattleT(a,c)};
+// newcomers get a few quiet days: raiders and monster packs steer clear of the starting village
+const _macroTickG=macroTick;macroTick=function(){_macroTickG();if(G.turn<DAY*3&&G.startSite!==undefined){const s=G.sites[G.startSite];G.bands.forEach(b=>{if(b.dead||b.live||!(b.fac==='horde'||b.fac==='bandit'||b.kind==='monster'||b.kind==='swarm'))return;const d=dist(b.x,b.y,s.x,s.y);if(d<70){const a=Math.atan2(b.y-s.y,b.x-s.x);b.goal={x:clamp(Math.round(s.x+Math.cos(a)*110),5,G.W-5),y:clamp(Math.round(s.y+Math.sin(a)*110),5,G.H-5)};b.path=null;if(d<45){b.x=Math.round(s.x+Math.cos(a)*50);b.y=Math.round(s.y+Math.sin(a)*50)}}})}};

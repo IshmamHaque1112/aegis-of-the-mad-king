@@ -128,7 +128,15 @@ Casters ward wounded allies and bless the battle line. The new spells (Fireball,
 
 ## The world map
 
-Choose between 6 and 10 continents, at Standard, Vast (2.25× area), or Colossal (4× area) scale. Each continent takes one of nine shapes: broad, long, twin-lobed, crescent around a great bay, star of peninsulas, ring around an inland sea, shattered into islands, fjord-cut, or a narrow mountain spine. Horde forts and bandit camps keep well away from the towns they threaten, though vassal nations live in their shadow. You can also tune sea level, climate, rainfall, rivers, islands, nations, Horde strength, monsters, wildlife, ruins, and history length. Use a seed or today's daily seed.
+The default **Earthlike** map looks like a real world map:
+- **Continents** of very different sizes sit freely in a single world ocean. Each is built from overlapping tectonic plates, with peninsulas, mountain ranges along fold belts, and pack ice at both poles.
+- **Climate** follows latitude: wet tropics at the equator, deserts around the subtropics, temperate belts, then boreal forest and tundra toward the poles.
+- **Winds:** trade winds and westerlies throw rain shadows behind the mountains.
+- **Islands:** island arcs line the coasts, hotspot chains trail across open ocean, and warm archipelagos scatter the tropics.
+
+<p align="center"><img src="docs/media/worldmap_earth.png" width="820" alt="An Earthlike generated world map"></p>
+
+Choose between 6 and 10 continents, at Standard, Vast (2.25× area), or Colossal (4× area) scale. The **Classic** style keeps the original layout of one continent per grid cell, where each continent takes one of nine shapes: broad, long, twin-lobed, crescent around a great bay, star of peninsulas, ring around an inland sea, shattered into islands, fjord-cut, or a narrow mountain spine. Horde forts and bandit camps keep well away from the towns they threaten, though vassal nations live in their shadow. You can also tune sea level, climate, rainfall, rivers, islands, nations, Horde strength, monsters, wildlife, ruins, and history length. Use a seed or today's daily seed.
 
 <p align="center"><img src="docs/media/worldgen.png" width="820" alt="Six generated worlds with different settings"></p>
 
