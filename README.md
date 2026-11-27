@@ -253,6 +253,38 @@ Wildlife lives too. Animals keep **dens,** breed in spring, starve in hard winte
 - **Companions grow and are mourned.** They level up from their own kills. When one dies, you mark the grave, the others grieve, and you can swear vengeance on the killer.
 - **Map overlays** show realms and wars, food and trade, danger (Horde, lairs, legendary beasts, bounties), and plague and weather.
 
+## Glory, gold and the road
+
+<p align="center"><img src="docs/media/glory_crowns.png" width="820" alt="The fighting pits, a prison cell, your museum, and the chronicle of a run"></p>
+
+
+- **Fighting pits** in towns: bouts to yield at three tiers, caged beasts, and wagers on other people's fights.
+- **Outlaws** with names, crimes and prices on their heads roam the country. Read the wanted posters, then bring back the signet for the bounty, or knock them out and bind them for half again as much.
+- **Your own caravans** buy cheap where they start and sell dear where they end, back and forth on their own, with as many guards as you pay for. Raiders can take them.
+- **Sellsword companies** (the Grey Lanterns, the Ninefold Spears, the Salt Wolves and others) sell their swords in wars and switch sides when outbid. You can hire one to take a Horde fort or a bandit camp.
+- **Named generals** lead each nation's armies, winning and losing on skill, morale and supply; armies far from home or fed by starving towns fight worse.
+- **Battlefields stay.** The dead lie where they fell, scavengers come, and a necromancer may raise them to march on the nearest village.
+- **Treasure maps to real hoards:** when a rival adventurer dies, their strongbox waits where they buried it. Innkeepers in their home town sell the map, and bandits sometimes carry one.
+- **Hidden places and landmarks:** each continent has landmarks such as the Nine Stones or the Hanging Falls, and a few sites that are on nobody's map. Find them by exploring, or ask hunters and hermits.
+
+## Crowns, cults and curses
+
+- **Horde politics:** sub-kings scheme against each other for the Mad King's favor. Shame them by killing their troops or by spreading rumors through fences, and their own captains overthrow them; the Horde on that continent sends no warbands while the coup plays out.
+- **Laws differ by nation:** curfews, peace-bonding heavy weapons, and bans on spellcasting in towns. Knights are exempt.
+- **Prison:** a sentence is now a choice. Serve it, work in the kitchen to shorten it, try to break out, or have a friend or spouse pay your bail.
+- **Secret cults** such as the Hollow Choir and the Children of the Ninth Bell grow in towns. People go missing and rituals summon beasts, the dead or plague. Gather clues, then accuse members until you reach the leader.
+- **Holy water, blessings and curses:** bless water at an altar, anoint your gear so it bites the dead, and lift curses from cursed gear found in dungeons, which won't leave your hand. Wishing fountains in towns sometimes grant a wish, and sometimes curse you.
+- **Bloodlines and clans:** vampires belong to the Velvet, Ashen or Mire Line, and werewolves to the Grey Moon, Silver Run or Stone Den clan, each with its own gifts. A shaman can teach you to choose when the beast comes out.
+
+## Body and home
+
+- **Addiction:** drink, dreamroot, madcap and mana tonics can hook you, and withdrawal brings shaking hands and pain. Healers and priests can help.
+- **Sleep and spirits:** going too long without sleep makes you clumsy, then you start nodding off and seeing things. Good meals, companions, festivals and a comfortable bed lift your spirits; bad weather, loneliness and loss bring them down.
+- **Ship crews** want wages and to see land now and then. Unhappy crews mutiny, and storms at sea batter the hull and wash sailors overboard.
+- **Home life:** furnish your house for comfort, hire a housekeeper who cooks and keeps watch, and fit a lock, or burglars will visit while you're away.
+- **A museum and collections:** found a museum and display trophies, relics and famous weapons for visitors' fees. Earn collector titles for species hunted, fish caught, landmarks found and exhibits shown.
+- **Saves that survive updates,** and a **Chronicle** of your run you can download as a page or copy as text.
+
 ## Mods
 
 The game supports **JSON mods** for new creatures, items, spells, starting kits, recipes, wildlife, rumors, and simple events. Install them from **Menu → Mods.** See [docs/MODDING.md](docs/MODDING.md) and the example [Marsh Folk](docs/mods/marsh-folk.json) mod.

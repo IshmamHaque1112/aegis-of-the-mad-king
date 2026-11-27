@@ -101,6 +101,16 @@ Twenty more systems, each with its own automated check, plus the full regression
 - **Lairs cleared by rival adventurers refilled at once.** They now wait like any other cleared lair.
 - **Small fixes:** the character sheet read "Known as Rook Knight"; titles are now listed separately. Ghosts that want a candle now tell you where to get one, and priests, merchants and innkeepers sell candles.
 
+## Round 7: pits, outlaws, cults and home life
+
+Twenty more systems, each with its own automated check, plus all earlier suites, fuzzing, and soaks of up to 74 days on three seeds.
+
+- **Player caravans locked up the game.** A caravan that arrived set off again at once as a new band, the world loop picked it up in the same pass, and it bounced between towns forever until the browser tab crashed. Return trips now wait in town for half a day.
+- **Settlements could crash on growth** if a town's population list was empty (a bug from round 4 that long soaks finally hit). Guarded.
+- **The first day of play hitched for half a second** while landmarks were placed. That work now happens during world creation and loading.
+- **Prison sentences ignored which nation sentenced you,** so escapes added no bounty. Fixed.
+- **Small fixes:** sellsword companies always include one on your starting continent, and hiring one no longer needs the target already on your map. The caravan screen now explains why it's empty when you know no other markets. The pits no longer say "against A caged boar".
+
 ## Known issues still open
 - **Hit messages report damage before reductions.** For example, "Shark hits you for 8" appears even when the hull absorbed it.
 - **Saves grow with exploration,** to about 1.2 MB after ~30 in-game days of heavy travel. IndexedDB handles this, but the localStorage fallback (about 5 MB) could fill on very long runs.
