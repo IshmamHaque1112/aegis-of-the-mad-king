@@ -1,7 +1,8 @@
 // ===== WORLD SETUP & TERRAIN =====
 const ARCH={temperate:{clim:0,wet:0,mtn:1,sp:['blossom','fungal']},boreal:{clim:-.22,wet:.05,mtn:1,sp:['crystal']},arid:{clim:.2,wet:-.22,mtn:.9,sp:['saltflat','badlands']},tropical:{clim:.25,wet:.2,mtn:.8,sp:['fungal','bamboo']},volcanic:{clim:.05,wet:-.05,mtn:1.3,sp:['volcanic']},highland:{clim:-.05,wet:.08,mtn:1.4,sp:['crystal','blossom']},steppe:{clim:.05,wet:-.12,mtn:.7,sp:['badlands']},frozen:{clim:-.38,wet:0,mtn:1,sp:['crystal']},marsh:{clim:.08,wet:.3,mtn:.6,sp:['fungal']}};
-const DEFOPT={scale:'standard',conts:8,sea:0,temp:0,moist:0,rivers:1,islands:1,monsters:1,horde:1,nations:2,history:200,ruins:1,wildlife:1,start:'random',kingdist:'far'};
-function setupWorld(seed,opt){opt=Object.assign({},DEFOPT,opt||{});CELL=opt.scale==='colossal'?640:opt.scale==='vast'?480:320;G.F=(CELL/320)**2;const n=clamp(opt.conts|0,6,10);const cols=Math.ceil(n/2),rows=2;
+function scaleCell(s){return {standard:320,vast:480,colossal:640,titanic:800}[s]||480}
+const DEFOPT={scale:'vast',conts:8,sea:0,temp:0,moist:0,rivers:1,islands:1,monsters:1,horde:1,nations:2,history:200,ruins:1,wildlife:1,start:'random',kingdist:'far'};
+function setupWorld(seed,opt){opt=Object.assign({},DEFOPT,opt||{});CELL=scaleCell(opt.scale);G.F=(CELL/320)**2;const n=clamp(opt.conts|0,6,10);const cols=Math.ceil(n/2),rows=2;
  G.opt=opt;G.seed=seed;G.ws=seed%99991;G.cols=cols;G.rows=rows;G.W=cols*CELL;G.H=rows*CELL;G.conts=[];
  withRng(seed*7+1,()=>{const top=shuffle(['frozen','boreal','highland','temperate','steppe','marsh']),bot=shuffle(['arid','tropical','temperate','marsh','steppe','highland']);const archs=[];for(let i=0;i<cols*rows;i++){const cx0=(i%cols)*CELL,cy0=Math.floor(i/cols)*CELL;const exists=i<n||false;const real=i<n;const row=Math.floor(i/cols);let a=row===0?top[(i%cols)%top.length]:bot[(i%cols)%bot.length];
    const c={id:i,cx0,cy0,x:cx0+CELL/2+ri(-22,22),y:cy0+CELL/2+ri(-22,22),rx:Math.round(ri(112,140)*CELL/320),ry:Math.round(ri(108,136)*CELL/320),arch:a,real,name:'',mtn:ARCH[a].mtn,clim:ARCH[a].clim+(R()-.5)*.08,wet:ARCH[a].wet+(R()-.5)*.08,sp:pick(ARCH[a].sp)};G.conts.push(c)}

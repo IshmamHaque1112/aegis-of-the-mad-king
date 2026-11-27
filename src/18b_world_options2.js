@@ -1,0 +1,2 @@
+// ===== NEW WORLD OPTIONS: scenario starts and simulation sliders (loads after the UI defines WOPTS) =====
+WOPTS.push(['scenario','Starting situation',[['none','An ordinary start'],['siege','Your town is under siege'],['wreck','Shipwrecked on a strange shore'],['escaped','Escaped from a Horde camp']],'none'],['armies','Army speed',[[.5,'Slow'],[1,'Normal'],[1.5,'Fast']],1],['winters','Winters',[['mild','Mild'],['normal','Normal'],['harsh','Deadly']],'normal'],['hungerRate','Hunger and thirst',[[.7,'Forgiving'],[1,'Normal'],[1.3,'Harsh']],1]);

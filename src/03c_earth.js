@@ -9,7 +9,7 @@ function blobD(b,x,y){const dx=x-b.x,dy=y-b.y;const u=(dx*b.ca+dy*b.sa)/(b.r*b.q
 function earthArch(ph,r){if(ph<.2)return r<.6?'tropical':'marsh';if(ph<.42)return r<.55?'arid':r<.8?'steppe':'tropical';if(ph<.66)return r<.4?'temperate':r<.6?'highland':r<.8?'marsh':'steppe';if(ph<.82)return r<.65?'boreal':'highland';return'frozen'}
 const _setupWorldE=setupWorld;
 setupWorld=function(seed,opt){const o=Object.assign({},DEFOPT,opt||{});if(o.style!=='earth'){G.own=null;return _setupWorldE(seed,o)}
- CELL=o.scale==='colossal'?640:o.scale==='vast'?480:320;G.F=(CELL/320)**2;const S=Math.sqrt(G.F);const n=clamp(o.conts|0,6,10);
+ CELL=scaleCell(o.scale);G.F=(CELL/320)**2;const S=Math.sqrt(G.F);const n=clamp(o.conts|0,6,10);
  G.opt=o;G.seed=seed;G.ws=seed%99991;G.conts=[];const landFrac=clamp(.33-(o.sea||0)*1.6,.2,.48);const meanArea=50000*G.F;const H=Math.round(Math.sqrt(n*meanArea/landFrac/2)/32)*32,W=H*2;G.W=W;G.H=H;G.cols=Math.ceil(W/CELL);G.rows=Math.ceil(H/CELL);
  withRng(seed*7+1,()=>{const sizes=[];for(let i=0;i<n;i++)sizes.push(.5+R()*1.05);sizes[0]*=1.8;if(n>=8)sizes[1]*=1.35;const tot=sizes.reduce((a,b)=>a+b,0);const placed=[];
   for(let i=0;i<n;i++){const area=sizes[i]*n/tot*meanArea;const r=Math.sqrt(area/Math.PI);let best=null,bs=-1e9;for(let t=0;t<300;t++){const x=r*.8+R()*(W-r*1.6),y=H*.13+R()*H*.74;let s=R()*4;for(const p of placed){const d=Math.hypot(p.x-x,p.y-y);const need=(p.r+r)*1.05+40*S;if(d<need)s-=(need-d)*10;else s+=Math.min(d-need,160)*.015}const ph=Math.abs(y/H-.5)*2;if(ph>.74)s-=(ph-.74)*120;if(s>bs){bs=s;best={x,y,r}}}placed.push(best)}
